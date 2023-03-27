@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Apply</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Animations">
+        <meta name="author" content="Yohani Uthpala">
+
+        <link rel="stylesheet" href="../word-style/apply.css" media="screen and (min-width:800px)"/>
+        <link rel="stylesheet" href="../word-style/apply-mobile.css" media="screen and (min-width:0px) and (max-width:479px)"/>
+
+        <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@300&family=Mukta+Mahee:wght@200&family=Mukta:wght@300;400&family=Poppins:wght@300&display=swap" rel="stylesheet">
+        <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+        <link href="https://fonts.googleapis.com/css2?family=Rubik+Wet+Paint&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+
+    </head>
+
+<body>
+    <!-- Header Starts here -->
+    <span class="logo"><img src="../images/logo.png" alt=""></span>
+    <div class="main-container">
+        <div class="header-container">
+            <!-- Navigation Bar -->
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="jobs.html">Jobs</a></li>
+                    <li style="box-shadow: inset 0 3px rgb(255, 255, 255);"><a href="apply.html">Application</a></li>
+                    <li><a href="about.html">About me</a></li>
+                    <li><a href="enhancement.html">Animation</a></li>
+                    <li><a href="enhancement2.html">Animation 2</a></li>
+                </ul>
+            </nav>
+        </div>
+        <section class="wrapper">
+            <form id="apply-form" action="https://mercury.swin.edu.au/it000000/formtest.php" method="post" class="apply-form">
+                <div class="title">
+                    Application
+                </div>
+                <div class="form">
+                    <div class="inputfield">
+                        <label>Job Reference No </label>
+                        <input id="job-reference-no" type="text" class="input" maxlength="5" placeholder="Will auto apply from the jobs page" readonly="true">
+                    </div>
+                    <div class="inputfield">
+                        <label>First Name </label>
+                        <input id="first-name" type="text" class="input" required name="first_name" placeholder="Enter first name...">
+                        <span id="first-name-err"  class="err-msg-txt err-none-active">
+                            *First name is not valid. First name value contains only letters
+                        </span>
+                    </div>
+                    <div class="inputfield">
+                        <label>Last Name </label>
+                        <input id="last-name" type="text" class="input" name="last_name" placeholder="Enter last name...">
+                        <span id="last-name-err"  class="err-msg-txt err-none-active">
+                            *Last name is not valid. Last name value contains only letters
+                        </span>
+                    </div>
+                    <div class="inputfield">
+                        <label>Date Of Birth</label>
+                        <input id="date-of-birth" type="text" placeholder="dd/mm/yyyy" name="date_of_birth" >
+                        <span id="birthday-err"  class="err-msg-txt err-none-active">
+                            *Birthday is not valid. Age should be above 15 years and below 80 years. 
+                        </span>
+                    </div>
+                    <div class="inputfield">
+                        <fieldset class="gender-fieldset">
+                            <legend>Gender</legend>
+                            <label><input id="genderf" type="radio" name="gender" value="Female">Female</label>
+                            <label><input id="genderm" type="radio" name="gender" value="Male" checked>Male</label>
+                        </fieldset>
+                    </div>
+                    <div class="inputfield">
+                        <label>Street Address </label>
+                        <input id="street-address" type="text" class="input" maxlength="40" name="street_address" placeholder="Enter street address...">
+                        <span id="street-err"  class="err-msg-txt err-none-active">
+                            *Street address is not valid.
+                        </span>
+                    </div>
+                    <div class="inputfield">
+                        <label>Suburb/Town </label>
+                        <input id="suburb-town" type="text" class="input" name="suburb_town" maxlength="40" placeholder="Enter suburb/town...">
+                        <span id="Suburb-town-err"  class="err-msg-txt err-none-active">
+                            *Suburb/Town is not valid. Suburb/Town value contains only letters
+                        </span>
+                    </div>
+                    <div class="inputfield">
+                        <label for="state">State</label>
+                        <select name="state" id="state">
+                            <option value="VIC">VIC</option>
+                            <option value="NSW">NSW</option>
+                            <option value="QLD">QLD</option>
+                            <option value="NT">NT</option>
+                            <option value="WA">WA</option>
+                            <option value="SA">SA</option>
+                            <option value="TAS">TAS</option>
+                            <option value="ACT">ACT</option>
+                        </select>
+                    </div>
+                    <div class="inputfield">
+                        <label>Postal Code</label>
+                        <input id="postcode" type="text" class="input" name="postcode" maxlength="4" minlength="4" placeholder="####">
+                        <span id="postcode-err"  class="err-msg-txt err-none-active">
+                            *Postcode is not valid. Postcode should be matched to state and contains only numbers. 
+                        </span>
+                    </div>
+                    <div class="inputfield">
+                        <label for="email-address">Email Address</label>
+                        <input id="email-address" type="text" class="input" name="email_address"
+                        placeholder="Enter email address...">
+                        <span id="email-err"  class="err-msg-txt err-none-active">
+                            *Email is not valid.
+                        </span>
+                    </div>
+                    <div class="inputfield">
+                        <label for="phone-number">Phone Number </label>
+                        <input id="phone-number" type="text" class="input"minlength="8" maxlength="11" name="phone_number" placeholder="Enter phone number...">
+                        <span id="phoneno-err"  class="err-msg-txt err-none-active">
+                            *Phone number is not valid. The correct format are +93xxxxxxxxx and +93xx xxxx xxxx and +93-xxxx-xxxx 
+                        </span>
+                    </div>
+                    <div class="inputfield">
+                        <fieldset class="skill-list-fieldset">
+                            <legend>Skill list</legend>
+                            <label><input type="checkbox" name="skills[]" value="Programing">Programing</label>
+                            <label><input type="checkbox" name="skills[]" value="Problem Solving">Problem Solving</label>
+                            <label><input type="checkbox" name="skills[]" value="other_skills" id="other_skill_chbx">Other skills...</label>
+                        </fieldset>
+                        <div class="inputfield">
+                            <label for="other-skills">Other skills</label>
+                            <textarea id="other-skills" name="other_skills" placeholder="Enter other skills..."></textarea>
+                            <span id="other-skill-err"  class="err-msg-txt err-none-active">
+                                *Other skill filed is not valid.
+                            </span>
+                        </div>
+                    </div>
+                    
+                    <div class="action-aria">
+                        <input type="submit" value="Apply Now" class="btn">
+                    </div>
+                </div>
+            </form>
+        </section>
+        <!-- Footer Starts Here -->
+        <div class="footer-container">
+            <!-- gmail -->
+            <div class="foot2">
+                <div class="footerBar" style="position: relative;">
+                    <a href="mailto:104067180@student.swin.edu.au" id="anchor_decma"
+                        class='bx bxl-gmail bx-sm socialIcons'
+                        style="background-color: white; color: red; position: relative; top: 15%;" target="_blank"></a>
+                </div>
+                <div class="footerBar">
+                    <small>Contact us :</small>
+                    <address>sdyohani123@gmail.com</address>
+                    <br>
+                    <div class="footer-text">Copyright &copy; 2022 Yohani Uthpala. All rights reserved.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../scripts/apply.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,34 @@
+.card__image {      
+  width: 100%;
+  height: 100%;
+}
+
+.header-container{
+  background-image: url(../images/me3.jpg);
+  background-size: 100%;
+}
+
+.logo{
+  float: left;
+  position: fixed;
+  width: 270px;
+  z-index: 1000;
+  filter: drop-shadow(1px 1px 4px rgb(255, 255, 255));
+}
+
+span img{
+  width: 30%;
+}
+
+.slideshow-item img{
+  position: relative;
+  top: 10%;
+  left: 8%;
+  width: 35%;
+  height: 86%;
+  object-fit: cover;
+  animation: zoom 54s infinite;
+  opacity: 75%;
+  float: right;
+  justify-items: center;
+}

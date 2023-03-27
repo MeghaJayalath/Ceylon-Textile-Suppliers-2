@@ -1,0 +1,37 @@
+.logo{
+    float: left;
+    position: fixed;
+    margin-left: -5%;
+    width: 270px;
+    z-index: 1000;
+    filter: drop-shadow(1px 1px 4px rgb(255, 255, 255));
+}
+
+span img{
+    width: 30%;
+}
+
+.arrow{
+    position: absolute;
+    top: 85%;
+    left: 47%;
+    width: 5%;
+    border-radius:20%;
+    opacity: 0.4;
+    transition: 0.3s;
+    box-shadow: 0px 0px 20px rgb(255, 255, 255);
+}
+
+.arrow:hover{
+    opacity: 0.8;
+    box-shadow: 0px 0px 30px rgb(255, 255, 255);
+}
+
+.slideshow-item img{
+    position: absolute;
+    top: 8%;
+    width: 100%;
+    object-fit: cover;
+    opacity: 95%;
+    animation: zoom 40s infinite;
+}
